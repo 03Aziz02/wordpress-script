@@ -1,0 +1,2 @@
+echo hello friends
+echo good
