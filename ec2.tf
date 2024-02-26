@@ -1,8 +1,8 @@
 resource "aws_instance" "WORDPRESS" {
-  ami           = "ami-0cf7b2f456cd5efd4"
+  ami           = "ami-0c7f9161f8491665f"
   instance_type = "t2.micro"
 
-  key_name                    = "new"
+  key_name                    = "MD"
   vpc_security_group_ids      = [aws_security_group.sg1.id]
   subnet_id                   = aws_subnet.public-subnet1.id
   associate_public_ip_address = true
