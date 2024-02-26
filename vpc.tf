@@ -1,6 +1,9 @@
-resource "aws_vpc" "Vpc" {
-  cidr_block = "10.0.0.0/16"
+#creating virtual private cloud VPC
+resource "aws_vpc" "vpc" {
+  cidr_block       = var.vpc_cidr
+  instance_tenancy = "default"
   tags = {
-    Name = "VPC"
+    Name    = "VPC"
+    Project = "Terraform"
   }
 }
