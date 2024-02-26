@@ -1,3 +1,4 @@
-resource "aws_internet_gateway" "IGW" {
-  vpc_id = aws_vpc.Vpc.id
+#Creating Internet Gateway for Demo VPC
+resource "aws_internet_gateway" "igw" {
+  vpc_id = aws_vpc.vpc.id
 }
