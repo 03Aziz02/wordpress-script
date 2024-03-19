@@ -1,6 +1,6 @@
 # Creating EC2 Instance
 resource "aws_instance" "wordpress" {
-  ami                         = "ami-02d7fd1c2af6eead0"
+  ami                         = "ami-02c9748ea283737c4"
   instance_type               = "t2.micro"
   key_name                    = "MK"
   vpc_security_group_ids      = [aws_security_group.sg.id]
