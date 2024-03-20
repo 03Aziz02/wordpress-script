@@ -9,6 +9,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose version
 pwd
 sudo yum install git -y
-git clone https://github.com/03Aziz02/wordpress.git
+git clone https://github.com/mujahidshaik28/wordpress.git
 cd wordpress
 docker-compose up -d
